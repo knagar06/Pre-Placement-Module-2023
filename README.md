@@ -8,7 +8,7 @@
 
 ## Coding Profiles
 - LeetCode: [kanishkanagar2002](https://leetcode.com/kanishkanagar2002/) (https://leetcode.com/YourLeetCodeUserName/)
-- HackerRank: https://www.hackerrank.com/kanishka_nagar (https://www.hackerrank.com/HackerRankUserName)
+- HackerRank: https://www.hackerrank.com/kanishka_1923ec1 (https://www.hackerrank.com/HackerRankUserName)
 
 ## Placement Module
 1. [DS I](https://github.com/knagar06/Pre-Placement-Module-2023/tree/main/DS%20I)
