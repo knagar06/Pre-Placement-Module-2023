@@ -1,14 +1,14 @@
 # Pre-Placement-Module-2023
 
-- Name: 
-- University Roll No.:
-- Branch:
-- Section:
-- Preferred Programming Language: C++/Java/Python
+- Name: Kanishka Nagar
+- University Roll No.: 1900290310069
+- Branch: ECE
+- Section: B
+- Preferred Programming Language: C++ AND Python
 
 ## Coding Profiles
-- LeetCode: [FIRSTNAME_LASTNAME](https://leetcode.com/YourLeetCodeUserName/)
-- HackerRank: [FIRSTNAME_LASTNAME](https://www.hackerrank.com/HackerRankUserName)
+- LeetCode: [kanishkanagar2002](https://leetcode.com/kanishkanagar2002/) (https://leetcode.com/YourLeetCodeUserName/)
+- HackerRank: https://www.hackerrank.com/kanishka_nagar (https://www.hackerrank.com/HackerRankUserName)
 
 ## Placement Module
 1. [DS I](https://github.com/YOURGITHUBUSERNAME/Pre-Placement-Module-2023/tree/main/DS%20I)
