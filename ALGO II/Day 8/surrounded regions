@@ -1,0 +1,33 @@
+class Solution:
+    def solve(self, board: List[List[str]]) -> None:
+        """
+        Do not return anything, modify board in-place instead.
+        """
+        def dfs(i, j, board, flip):
+            if i < 0 or j < 0 or i == len(board) or j == len(board[0]): # out of board -> stop recursion
+                return
+            if board[i][j] == 'X': # cell is 'X', cannot connect 'O' anymore
+                return
+            if not flip[i][j]: # this cell of 'O' has already been traversed -> stop recursion
+                return
+            flip[i][j] = False # mark the cell so that it wouldn't be flipped to 'X' later
+			# continue recusions with 4-direction neighbors
+            dfs(i-1, j, board, flip)
+            dfs(i+1, j, board, flip)
+            dfs(i, j-1, board, flip)
+            dfs(i, j+1, board, flip)
+            return
+            
+        row = len(board)
+        col = len(board[0])
+        flip = [[True] * col for _ in range(row)] # initially mark every cell to flip to 'X'
+        for i in range(row):
+            for j in range(col):
+				# start the recursion with cells on the border
+                if i == 0 or j == 0 or i == row-1 or j == col-1: 
+                    dfs(i, j, board, flip)
+
+        for i in range(row):
+            for j in range(col):
+                if flip[i][j]:
+                    board[i][j] = 'X'

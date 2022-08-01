@@ -1,0 +1,66 @@
+import itertools as it
+dic = { "2": "a b c", "3": "d e f", "4":"g h i", "5":"j k l", "6":"m n o", "7":"p q r s", "8":"t u v", "9":"w x y z"}
+class Solution:
+    def letterCombinations(self, i: str) -> List[str]:
+        v=[]
+        for j in i:
+            v.append(list(dic[j].split()))
+        if len(i)==0:
+            
+            k=[]
+            
+            return k    
+        elif len(i)==1:
+            p = list(it.product(v[0]))
+            k=[]
+            for j in p:
+                k.append("".join(j))
+            return k
+        elif len(i)==2:
+            p = list(it.product(v[0],v[1]))
+            k=[]
+            for j in p:
+                k.append("".join(j))
+            return k
+        elif len(i)==3:
+            p = list(it.product(v[0],v[1],v[2]))
+            k=[]
+            for j in p:
+                k.append("".join(j))
+            return k
+        elif len(i)==4:
+            p = list(it.product(v[0],v[1],v[2],v[3]))
+            k=[]
+            for j in p:
+                k.append("".join(j))
+            return k
+        elif len(i)==5:
+            p = list(it.product(v[0],v[1],v[2],v[3],v[4]))
+            k=[]
+            for j in p:
+                k.append("".join(j))
+            return k
+        elif len(i)==6:
+            p = list(it.product(v[0],v[1],v[2],v[3],v[4],v[5]))
+            k=[]
+            for j in p:
+                k.append("".join(j))
+            return k
+        elif len(i)==7:
+            p = list(it.product(v[0],v[1],v[2],v[3],v[4],v[5],v[6]))
+            k=[]
+            for j in p:
+                k.append("".join(j))
+            return k
+        elif len(i)==8:
+            p = list(it.product(v[0],v[1],v[2],v[3],v[4],v[5],v[6],v[7]))
+            k=[]
+            for j in p:
+                k.append("".join(j))
+            return k
+        elif len(i)==9:
+            p = list(it.product(v[0],v[1],v[2],v[3],v[4],v[5],v[6],v[7],v[8]))
+            k=[]
+            for j in p:
+                k.append("".join(j))
+            return k
