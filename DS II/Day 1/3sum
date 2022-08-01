@@ -1,0 +1,48 @@
+class Solution {
+public:
+
+vector<vector<int>> ans;
+
+void twoSum(int i,int n,vector<int> &nums,int target){
+    int a=nums[i-1];
+    while(i<n){
+        if(nums[i]+nums[n]>target){
+            n--;
+        }
+        else if(nums[i]+nums[n] < target){
+            i++;
+        }
+        else{
+            vector<int> store;
+            store.push_back(a);
+            store.push_back(nums[i]);
+            store.push_back(nums[n]);
+            
+            ans.push_back(store);
+            //duplicate i 
+            while(i<n && nums[i]==nums[i+1]) i++;
+            //duplicate n
+            while(i<n && nums[n]==nums[n-1]) n--;
+            
+            //increase ith index and decrease nth index
+            i++;
+            n--;
+        }
+    }
+}
+
+vector<vector<int>> threeSum(vector<int>& nums) {
+    
+     int n=nums.size();         
+     if(n<3)  return ans;
+     sort(nums.begin(),nums.end());
+
+    for(int i=0;i<n;i++){
+    //duplicate 
+    if(i==0 || nums[i]!=nums[i-1]){
+        twoSum(i+1,n-1,nums,0-nums[i]);
+    }
+}
+return ans;
+}
+};
